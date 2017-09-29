@@ -4,6 +4,7 @@ $(document).ready(function(){
 getIt();
 frameIt();
 submitIt();
+pressIt();
 // call functions here
 
 });
@@ -23,5 +24,13 @@ function frameIt(){
 function submitIt(){
   $('form').on('submit', function(){
     alert('Your form is going to be submitted now.')
+  })
+}
+
+function pressIt(){
+  $(document).on('keydown', function(e){
+    if(e.which === 71 || e.which === 103){
+      alert('g or G was pressed');
+    }
   })
 }
