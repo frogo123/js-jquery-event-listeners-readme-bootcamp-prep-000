@@ -3,6 +3,7 @@
 $(document).ready(function(){
 getIt();
 frameIt();
+submitIt();
 // call functions here
 
 });
